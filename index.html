@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Price Calculator</title>
+
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <header class="header">
+        KG Price Calculator
+    </header>
+
+    <br><br><br>
+
+    <div class="content">
+        <div class="inputs">
+            <label for="listed-price">Price</label>
+            <input onkeyup="calculatePrice()" type="text" id="listed-price" name="listed_price" placeholder="Type the price here">
+            <br>
+            <label for="listed-weight">Weight (in g)</label>
+            <input onkeyup="calculatePrice()" type="text" id="listed-weight" name="listed_weight" placeholder="Type the weight here">
+        </div>
+        <br><br><br>
+        <div class="result" id="result">
+
+        </div>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
